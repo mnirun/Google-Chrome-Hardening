@@ -6,40 +6,40 @@ REM https://www.chromium.org/administrators/policy-list-3
 REM Change working directory
 PUSHD %~dp0
 
-ECHO Enable or disable PIN-less authentication for remote access hosts' is set to 'Disabled'
+ECHO Disable PIN-less authentication for remote access hosts
 REG ADD "HKLM\SOFTWARE\Policies\Google\Chrome" /v RemoteAccessHostAllowClientPairing /d "0" /t REG_DWORD /f >NUL 2>&1
 
 ECHO Keep cookies for the duration of the session
 REG ADD "HKLM\SOFTWARE\Policies\Google\Chrome" /v DefaultCookiesSetting /d "4" /t REG_DWORD /f >NUL 2>&1
 
-ECHO Click to play Flash plugins
+ECHO Flash plugin click to play
 REG ADD "HKLM\SOFTWARE\Policies\Google\Chrome" /v DefaultPluginsSetting /d "3" /t REG_DWORD /f >NUL 2>&1
 
-ECHO Enable saving passwords to the password manager' is set to 'Disabled'
+ECHO Disable saving passwords to the password manager
 REG ADD "HKLM\SOFTWARE\Policies\Google\Chrome" /v PasswordManagerEnabled /d "0" /t REG_DWORD /f >NUL 2>&1
 
-ECHO Allow running plugins that are outdated' is set to 'Disabled'
+ECHO Disable running plugins that are outdated
 REG ADD "HKLM\SOFTWARE\Policies\Google\Chrome" /v AllowOutdatedPlugins /d "0" /t REG_DWORD /f >NUL 2>&1
 
-ECHO Continue running background apps when Google Chrome is closed' is set to 'Disabled'
+ECHO Disable continue running background apps when Google Chrome is closed
 REG ADD "HKLM\SOFTWARE\Policies\Google\Chrome" /v BackgroundModeEnabled /d "0" /t REG_DWORD /f >NUL 2>&1
 
-ECHO Enable AutoFill' is set to 'Disabled'
+ECHO Disable AutoFill
 REG ADD "HKLM\SOFTWARE\Policies\Google\Chrome" /v AutoFillEnabled /d "0" /t REG_DWORD /f >NUL 2>&1
 
-ECHO Enable Google Cloud Print Proxy' is set to 'Disabled'
+ECHO Disable Google Cloud Print Proxy
 REG ADD "HKLM\SOFTWARE\Policies\Google\Chrome" /v CloudPrintProxyEnabled /d "0" /t REG_DWORD /f >NUL 2>&1
 
-ECHO Enable reporting of usage and crash-related data' is set to 'Disabled'
+ECHO Disable reporting of usage and crash-related data
 REG ADD "HKLM\SOFTWARE\Policies\Google\Chrome" /v MetricsReportingEnabled /d "0" /t REG_DWORD /f >NUL 2>&1
 
-ECHO Enable Site Isolation for every site' is set to 'Enabled'
+ECHO Enable Site Isolation for every site
 REG ADD "HKLM\SOFTWARE\Policies\Google\Chrome" /v SitePerProcess /d "1" /t REG_DWORD /f >NUL 2>&1
 
-ECHO Enable submission of documents to Google Cloud print' is set to 'Disabled'
+ECHO Disable submission of documents to Google Cloud print
 REG ADD "HKLM\SOFTWARE\Policies\Google\Chrome" /v CloudPrintSubmitEnabled /d "1" /t REG_DWORD /f >NUL 2>&1
 
-ECHO Import saved passwords from default browser on first run' is set to 'Disabled'
+ECHO Disable import saved passwords from default browser on first run
 REG ADD "HKLM\SOFTWARE\Policies\Google\Chrome" /v ImportSavedPasswords /d "0" /t REG_DWORD /f >NUL 2>&1
 
 ECHO Disable synchronization of data with Google
