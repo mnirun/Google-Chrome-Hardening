@@ -20,6 +20,27 @@
 - ปิดการใช้งานแป้นพิมพ์บนหน้าจอ (Disable on-screen keyboard)
 - ไม่อนุญาตให้ไซต์ใดๆ แสดงการแจ้งเตือนทางเดสก์ท็อป (Do not allow any site to show desktop notifications)
 
+## Policies lists
+
+Policy Name | Value|Description
+-----|-----|-----
+RemoteAccessHostAllowClientPairing|0|Disable PIN-less authentication for remote access hosts
+DefaultCookiesSetting|4|Keep cookies for the duration of the session
+DefaultPluginsSetting|0|Flash plugin click to play
+PasswordManagerEnabled|0|Disable saving passwords to the password manager
+AllowOutdatedPlugins|0|Disable running plugins that are outdated
+BackgroundModeEnabled|0|Disable continue running background apps when Google Chrome is closed
+AutoFillEnabled|0|Disable AutoFill
+CloudPrintProxyEnabled|0|Disable Google Cloud Print Proxy
+MetricsReportingEnabled|0|Disable reporting of usage and crash-related data
+SitePerProcess|1|Enable Site Isolation for every site
+CloudPrintSubmitEnabled|0|Disable submission of documents to Google Cloud print
+ImportSavedPasswords|0|Disable import saved passwords from default browser on first run
+SyncDisabled|1|Disable synchronization of data with Google
+TranslateEnabled|0|Disable the integrated Google Translate service on Chromium
+VirtualKeyboardEnabled|0|Disable on-screen keyboard
+DefaultNotificationsSetting|2|Do not allow any site to show desktop notifications
+
 ## ข้อมูลอ้างอิง
 - [Home-Security-by-W10-Hardening](https://github.com/teusink/Home-Security-by-W10-Hardening)
 - [Google Chrome Group Policy Administrative Templates](https://getadmx.com/?Category=Chrome)
