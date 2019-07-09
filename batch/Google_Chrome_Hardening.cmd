@@ -37,7 +37,7 @@ ECHO Enable Site Isolation for every site
 REG ADD "HKLM\SOFTWARE\Policies\Google\Chrome" /v SitePerProcess /d "1" /t REG_DWORD /f >NUL 2>&1
 
 ECHO Disable submission of documents to Google Cloud print
-REG ADD "HKLM\SOFTWARE\Policies\Google\Chrome" /v CloudPrintSubmitEnabled /d "1" /t REG_DWORD /f >NUL 2>&1
+REG ADD "HKLM\SOFTWARE\Policies\Google\Chrome" /v CloudPrintSubmitEnabled /d "0" /t REG_DWORD /f >NUL 2>&1
 
 ECHO Disable import saved passwords from default browser on first run
 REG ADD "HKLM\SOFTWARE\Policies\Google\Chrome" /v ImportSavedPasswords /d "0" /t REG_DWORD /f >NUL 2>&1
